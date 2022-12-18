@@ -13,7 +13,7 @@
 img{
   display: block;
   margin: 0 auto;
-  width: 50%;
+  width: 80%;
   
 }
 
@@ -21,3 +21,94 @@ img{
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+html {
+  min-height: 100vh;
+  height: auto;
+  background-color: rgb(37, 37, 37);
+}
+
+ body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.5);
+
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  padding: 3.5em 3.5em 3.5em 3.5em;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.secondaryButton button{
+  margin: 1.25em 0.25em 0.25em 0em;
+  border-radius: 6px;
+  border: none;
+  height: 2rem;
+  padding: 0 0.5rem;
+  white-space: nowrap;
+  cursor: pointer;
+ 
+}
+
+.outputs {
+  width: 60%;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10%;
+}
+
+.inputs {
+  justify-content: center;
+  flex-direction: column;
+  width: 20rem;
+  padding-right: 10px;
+  border-right: 2px solid grey;
+}
+
+input {
+  border-radius: 6px;
+  border: solid 2px rgba(255, 255, 255, 0.35);
+  border-color: rgba(255, 255, 255, 0.5);
+  width: 12rem;
+  height: 2.5rem;
+  background-color: transparent;
+  color: inherit;
+  color-scheme: dark;
+}
+
+.getImage {
+  height: 2.5rem;
+  border-radius: 6px;
+  background-color: #FF9900;
+  border: 0;
+  cursor: pointer;
+}
+
+.note {
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.hidden {
+display: none;
+}
+
+h1, h3 {
+  color: white;
+}
+
+.description > p {
+  line-height: 1.65rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+button:hover {
+  background-color: #f8b54f;
+}

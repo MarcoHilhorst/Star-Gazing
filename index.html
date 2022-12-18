@@ -4,26 +4,48 @@
     	<meta charset="utf-8">
     	<meta name="description" content="This is where your description goes">
     	<meta name="keywords" content="one, two, three">
-
-		<title>Title in the tab</title>
-
-		<!-- external CSS link -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+		<title>Star Gazing</title>
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
-	<body>
+	<body class="flex">
+		<!-- Input section -->
+		<section class="inputs flex">
+			<!-- Header -->
+			<header>
+				<h1>Star Gazing</h1>
+				<p>Enter a date to see the Nasa photo of the day for that date</p>
+				<p class="note">Note: some images have a large file size and may take a few seconds to load</p>
+			</header>
 
-		<h1>Star Gazing</h1>
-		<input type="date" name="" value="" placeholder="Enter a date">
-		<button type="button" name="button">Get Image</button>
-		<button type="button" class="fwd">Forward 1</button>
-		<button type="button" class="bck">Back 1</button>
-		<button type="button" class="rndm">Random date</button>
+			<!-- Search Form -->
+			<div>
+				<input type="date" name="" value="" placeholder="Enter a date">
+				<button type="button" name="button" class="getImage">Get Image</button>
+				<div class="flex secondaryButton">
+					<button type="button" class="fwd">Forward 1</button>
+					<button type="button" class="bck">Back 1</button>
+					<button type="button" class="rndm">Random date</button>
+				</div>
+				
+			</div>
+		</section>
 
-		<h2>Image</h2>
-		<img src="" alt="">
-		<iframe src="" frameborder="0"></iframe>
-		<h3>Description</h3>
+		<!-- Output section -->
+		<section class="outputs flex">
+			<h1 class="title"></h1>
+			<div class="image">
+				<img src="" alt="" class="">
+				<iframe src="" frameborder="0" class=""></iframe>
+			</div>
+			<div class="description">
+				<h3 class="hidden">Description:</h3>
+				<p class="imgDescription"></p>
+			</div>
+		</section>
 
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
